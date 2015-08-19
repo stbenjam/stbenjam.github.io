@@ -1,0 +1,14 @@
+# Site settings
+title: bitbin.de | Stephen Benjamin
+email: stephen@bitbin.de
+description: hello world
+
+baseurl: ""
+url: "http://localhost:4000"
+twitter_username: stbenjam
+github_username:  stbenjam
+permalink: /blog/:year/:month/:title/
+
+# Build settings
+markdown: kramdown
+highlighter: pygments
