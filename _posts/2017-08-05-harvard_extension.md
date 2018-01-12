@@ -26,7 +26,7 @@ study full time to wrap things up quickly as my GI Bill benefits expire soon.
 
 **Update**: I've since returned from my LoA, and finished all but my last
 course (the Capstone). I've updated this blog post with reviews of everything
-I've taken so far, and some conclusions I've made so far about the ALM.
+I've taken so far, and [some conclusions](#conclusion) I've made so far about the ALM.
 
 ## Courses
 
