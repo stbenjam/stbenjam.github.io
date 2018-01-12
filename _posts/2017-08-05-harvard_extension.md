@@ -215,14 +215,17 @@ after I graduate.
 Instead of E-134, I took this for the 'data communications' requirement.
 
 The video lectures were largely reading the text slides word-for-word,
-unfortunately.  Students do get some experience with packet sniffing wireless
-networks, and content related to mobile networks.  However, I didn't like the
-course structure.  Weekly requirements were forced discussion: watching a video
-and writing a summary post, and then replying to two other students' posts.
-Labs were interesting, but not very deep.
+unfortunately.  Students do get some experience with packet sniffing WiFi
+networks with kismet and such, and some content related to 3G/LTE mobile
+networks.  However, I didn't like the course structure.  Weekly requirements
+were forced discussion: watching a video and writing a summary post, and then
+replying to two other students' posts.
 
+The course staff was in general great, and I found them knowledgable and the
+labs OK, but I was hoping for more. Labs were interesting, but not very deep.
 Had I known CSCI E-134 wasn't going to work out, I'd have taken one of the
-internet architecture courses on offer, but they did not fit with my schedule.
+internet architecture courses on offer, but they did not fit with my schedule
+by the time I dropped it.
 
 ### CSCI E-599: Capstone
 
