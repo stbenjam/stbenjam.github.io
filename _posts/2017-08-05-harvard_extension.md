@@ -251,4 +251,5 @@ transistors, and a combinational lock out of push buttons, LED's, and flip
 flops.  I've written a multithreaded web server, my own shell, and my own
 implementations of a ton of Unix utilities.  All of this gave me a better
 foundation in how computers actually work, something I don't think I had a good
-grasp on before I began this journey.
+grasp on before I began this journey - even though I had been working as a
+developer and sysadmin for a number of years.
