@@ -1,41 +1,47 @@
 ---
 title: Harvard Extension's ALM in Software Engineering
-date: 2017-08-05 10:56:00
+date: 2018-01-11 17:56:00
 categories: education
 ---
 
 A few years ago, I finished my B.S. in Computer Science through
-[UMUC](http://umuc.edu/), mostly online and while traveling in Germany as a
-Consultant for Red Hat. When I moved back to the US, I knew I wanted to use the
-remainder of my GI Bill entitlement on a Master's degree.  These days, there's
-a lot of options for online programs - for example, Georgia Tech's online MSCS
-program.  My coworker did a nice [write
-up](http://blog.daniellobato.me/omscs-year-1-review/) of his experience so far.
+[UMUC](http://umuc.edu/), online and while traveling as a Consultant for Red
+Hat. When I moved back to the US, I knew I wanted to use the remainder of my GI
+Bill entitlement on a Master's degree.  These days, there's a lot of options
+for online programs - for example, Georgia Tech's online MSCS program.  My
+coworker did a nice [write up](http://blog.daniellobato.me/omscs-year-1-review/) of his experience so far.
 
 I decided to opt for a local program, and narrowed down my choices between
 Tuft's part-time [M.S. in Computer Science](http://www.cs.tufts.edu/Master-of-Science-in-Computer-Science-Degree/part-time-masters-degree-program-in-computer-science.html),
-and Harvard Extension's awkwardly named [_Master of Liberal Arts in extension studies, field: Software Engineering_](https://www.extension.harvard.edu/academics/graduate-degrees/software-engineering-degree).
+and Harvard Extension's awkwardly named [_Master of Liberal Arts in extension studies, field: Software Engineering_](https://www.extension.harvard.edu/academics/graduate-degrees/software-engineering-degree). There's a difference between computer science and software engineering, of course, but the Harvard ALM was flexible enough that I could include the theoretical stuff I wanted and it was easier to get to Harvard on public transportation. The degrees from the extension school seem to be awkwardly named to
+differentiate the Extension school from the other more traditional schools at
+Harvard.  Still, I don't get why it's a Master of Liberal Arts, that's not
+really reflective of the coursework. There's been [some effort to change
+that](http://www.thecrimson.com/article/2016/4/25/extension-school-rally-degrees/),
+although I doubt I'll ever see it as I'm nearly done.
 
-There's a difference between computer science and software engineering, of course, but the Harvard ALM was flexible enough that I could include the theoretical stuff I wanted and it was easier to get to Harvard on public transportation.
+I've mostly taken one course at a time, but this year my [awesome
+employer](http://www.redhat.com/) graciously let me take a leave of absence to
+study full time to wrap things up quickly as my GI Bill benefits expire soon.
 
-The degrees from the extension school seem to be awkwardly named to differentiate the Extension school from the other more traditional schools at
-Harvard, lest someone be confused that my degree came from [SEAS](https://www.seas.harvard.edu/).  Still, I don't get why it's a Master of
-Liberal Arts, that's not really reflective of the coursework, and there's been [some effort to change that](http://www.thecrimson.com/article/2016/4/25/extension-school-rally-degrees/), although I doubt I'll ever see it as I'm nearly done.
-
-I've mostly taken one course at a time, but this year my [awesome employer](http://www.redhat.com/) graciously let me take a leave of absence to study full time to wrap things up quickly as my GI Bill benefits expire soon.
+**Update**: I've since returned from my LoA, and finished all but my last
+course (the Capstone). I've updated this blog post with reviews of everything
+I've taken so far, and some conclusions I've made so far about the ALM.
 
 ## Courses
 
   - [CSCI E-97: Software Design Patterns](#csci-e-97-software-design-patterns)
   - [CSCI E-93: Computer Architecture](#csci-e-93-computer-architecture)
   - [CSCI E-95: Compiler Design](#csci-e-95-compiler-design)
+  - [CSCI E-92: Operating Systems](#csci-e-92-operating-systems)
   - [CSCI E-28: Unix Programming](#csci-e-28-unix-programming)
   - [STAT E-100: Intro to Statistics](#stat-e-100-intro-to-statistics)
   - [PHYS S-123: Laboratory Electronics: Analog and Digital Circuit Design](#phys-s-123-laboratory-electronics-analog-and-digital-circuit-design)
-  - CSCI E-55: Java, Hadoop, Lambda Expressions, and Streams (Fall 2017)
-  - CSCI E-15: Dynamic Web Design (Fall 2017)
-  - CSCI E-134: Networks (Fall 2017)
-  - CSCI E-599: Capstone (Spring 2018)
+  - [CSCI E-55: Java, Hadoop, Lambda Expressions, and Streams](#csci-e-55-java-hadoop-lambda-expressions-and-streams)
+  - [CSCI E-15: Dynamic Web Design](#csci-e-15-dynamic-web-design)
+  - [~~CSCI E-134: Networks~~](#csci-e-134-networks)
+  - [CSCI E-48: Secure Mobile Computing](#csci-e-48-secure-mobile-computing)
+  - [CSCI E-599: Capstone](#)
 
 ### CSCI E-97: Software Design Patterns
 
@@ -69,9 +75,6 @@ multipliers as theirs.
 
 If you end up taking this, go to section.  It's extremely useful and a lot of
 implementation suggestions are given.
-
-If you want to take it with me, I'm a TA for the Fall 2017 class! It's available
-as an online option, too.
 
 ### CSCI E-95: Compiler Design
 
@@ -172,20 +175,80 @@ writing assembly programs for it.
 The text book we used is [The Art of Electronics](https://www.amazon.com/Art-Electronics-Paul-Horowitz/dp/0521809266/ref=sr_1_1), along
 with the accompanying student lab manual.
 
-## What's left?
+### CSCI E-55: Java, Hadoop, Lambda Expressions, and Streams
 
-So the above is everything I've taken so far.  For Fall 2017, I'm taking
-my final three classes before I take the capstone:
+This met the 'cloud' requirement in the ALM program -- because of the short section
+on Hadoop. It was the only available class that met the cloud requirement, so I had
+to take it. It would be a useful class if you did not know Java, but were
+already an experienced developer in something else. I *did* know Java so it was
+largely review.  The overview of Java 8 features, and Hadoop were great, but
+that only made up about the last 1/4 of the course.
 
-  * CSCI E-134: Networks - Explores game theory, social networks, etc at the intersection of economics and computer science. This one is run concurrently with the Harvard College version of the class.
+The instructor is great, and provides a history of his experience as a software
+developer over several decades.  That was my favorite part of the class.
 
-  * CSCI E-15: Dynamic Web Design - A web design class is required, I wish I could've swapped this out for a more interesting elective.  The class itself looks well put together.
+### CSCI E-15: Dynamic Web Design
 
-  * CSCI E-55: Java and Hadoop - another required class, this meets the "Cloud" requirement.  It's a Java for programmers class.  I already know Java, but it looks like the latter half the class covers Hadoop and the functional programming features of Java 8 which should be interesting.
+Another requirement for the ALM is 'web design.'  The course was very well
+organized, and helpful if you knew HTML/CSS and did not have any background
+with a MVC framework.  The course teaches Laravel, PHP, and HTML and students
+get a handle on git and work a bit with the LAMP stack.
 
-And in Spring 2018, I only have to take the capstone course, which is the final
-course in the Master's program.  It involves a group project.
+For me, a waste of time and I wish 'web design' was not required, and instead
+given another elective spot.
 
-Alternative to the capstone is a thesis track.  I still wonder if I should switch to it, but it'd delay my graduation by about a year.  I still have a few months to make a final decision and get a proposal ready if I decided to go that route.
+### CSCI E-134: Networks
 
-If you want to know anything else, let me know!
+This course I had intended to fulfill my 'data communications' requirement for
+the ALM.  It was an exploration of all kinds of networks, such as social
+networks.  It was marketed as an intersection of economics/computer science.
+It was run concurrently with the Harvard College version of the class.
+
+I dropped it early on, as the advertised pre-reqs were not correct. One needs
+a deeper background than I had in math, including linear algebra.  I've always
+regretted not having a better background in math.  Maybe something I'll improve
+after I graduate.
+
+
+### CSCI E-48: Secure Mobile Computing
+
+Instead of E-134, I took this for the 'data communications' requirement.
+
+The video lectures were largely reading the text slides word-for-word,
+unfortunately.  Students do get some experience with packet sniffing wireless
+networks, and content related to mobile networks.  However, I didn't like the
+course structure.  Weekly requirements were forced discussion: watching a video
+and writing a summary post, and then replying to two other students' posts.
+Labs were interesting, but not very deep.
+
+Had I known CSCI E-134 wasn't going to work out, I'd have taken one of the
+internet architecture courses on offer, but they did not fit with my schedule.
+
+### CSCI E-599: Capstone
+
+Currently in progress for Spring 2018, will update when complete.
+
+## Conclusion
+
+I have finished all but the Capstone, which I'm currently taking in Spring 2018.
+
+There are many amazing courses at HES, but the 5 elective slots in the ALM
+program are not enough, especially when they've filled up the requirements with
+fluff like web design, "cloud", and data communications where the classes only
+very loosely fit into those buckets.
+
+I am a little bit disappointed by how many courses I felt like were wasting my
+time.  My own professional goals do not align with how HES has structured the
+ALM.  I'd rather have more elective slots, which I could've used to correct my
+weakness in math ([MATH E-23A](https://www.extension.harvard.edu/academics/courses/linear-algebra-real-analysis-i/15176)
+and others), or get more experience with research ([CSCI E-191](https://www.extension.harvard.edu/academics/courses/classics-computer-science/24999)).
+
+However, overall my experience at HES has been a good one.  There are a number
+of classes that I think were high quality and well worth my time.  I wrote a
+compiler, an operating system more or less from scratch, and designed my own
+instruction set and processor.  I've built op amps on breadboards from
+transistors, and a combinational lock out of push buttons, LED's, and flip
+flops.  I've written a multithreaded web server, my own shell, and my own
+implementations of a ton of Unix utilities.  All of this gave me a better
+foundation in how computers actually work, something I don't think I had a good
+grasp on before I began this journey.
