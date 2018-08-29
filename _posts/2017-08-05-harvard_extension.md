@@ -1,32 +1,67 @@
 ---
+layout: post
 title: Harvard Extension's ALM in Software Engineering
-date: 2018-01-11 17:56:00
+date: 2018-07-14 10:31:00
 categories: education
 ---
 
-A few years ago, I finished my B.S. in Computer Science through
-[UMUC](http://umuc.edu/), online and while traveling as a Consultant for Red
-Hat. When I moved back to the US, I knew I wanted to use the remainder of my GI
-Bill entitlement on a Master's degree.  These days, there's a lot of options
-for online programs - for example, Georgia Tech's online MSCS program.  My
-coworker did a nice [write up](http://blog.daniellobato.me/omscs-year-1-review/) of his experience so far.
+Sometimes, I wish I had just gone to college right after high school,
+but I didn't.  I joined the Navy, and when I got out I got my first job
+as a systems administrator without any formal education.  That worked
+well for a while, but it caused a lot of headaches when I immigrated to
+Germany -- they very much prefer a formal education.  I also really
+wanted to fill the gaps in, I wasn't much of a programmer nor did I have
+a good idea of how things really worked under the covers.
 
-I decided to opt for a local program, and narrowed down my choices between
-Tuft's part-time [M.S. in Computer Science](http://www.cs.tufts.edu/Master-of-Science-in-Computer-Science-Degree/part-time-masters-degree-program-in-computer-science.html),
-and Harvard Extension's awkwardly named [_Master of Liberal Arts in extension studies, field: Software Engineering_](https://www.extension.harvard.edu/academics/graduate-degrees/software-engineering-degree). There's a difference between computer science and software engineering, of course, but the Harvard ALM was flexible enough that I could include the theoretical stuff I wanted and it was easier to get to Harvard on public transportation. The degrees from the extension school seem to be awkwardly named to
-differentiate the Extension school from the other more traditional schools at
-Harvard.  Still, I don't get why it's a Master of Liberal Arts, that's not
-really reflective of the coursework. There's been [some effort to change
-that](http://www.thecrimson.com/article/2016/4/25/extension-school-rally-degrees/),
-although I doubt I'll ever see it as I'm nearly done.
+So, I took advantage of the GI Bill and finished my B.Sc. in Computer
+Science through [UMUC](http://umuc.edu/), all by distance learning.  As
+I was a Consultant at the time, my nomadic life in hotel rooms in rural
+Switzerland was pretty conducive to being able to do my homework.
 
-I've mostly taken one course at a time, but this year my [awesome
-employer](http://www.redhat.com/) graciously let me take a leave of absence to
-study full time to wrap things up quickly as my GI Bill benefits expire soon.
+In 2015, I moved back to the US and with some entitlement left on my GI
+Bill, I decided to pursue my Master's degree. There's a lot of options
+for online programs - for example, Georgia Tech's online MSCS program.
+My coworker did a nice [write
+up](http://blog.daniellobato.me/omscs-year-1-review/) of his experience.
 
-**Update**: I've since returned from my LoA, and finished all but my last
-course (the Capstone). I've updated this blog post with reviews of everything
-I've taken so far, and [some conclusions](#conclusion) I've made so far about the ALM.
+However, I decided to opt for a local program and try to have one normal in-person
+college experience.  I narrowed down my choices between Tuft's part-time
+[M.S. in Computer
+Science](http://www.cs.tufts.edu/Master-of-Science-in-Computer-Science-Degree/part-time-masters-degree-program-in-computer-science.html),
+and Harvard Extension's awkwardly named [_Master of Liberal Arts in
+extension studies, field: Software
+Engineering_](https://www.extension.harvard.edu/academics/graduate-degrees/software-engineering-degree).
+In the end, I opted for Harvard due to it being a much easier commute.
+
+I mostly took one course at a time, but this year my
+[employer](http://www.redhat.com/) graciously let me take a leave of
+absence to study full time to wrap things up quickly as my GI Bill
+benefits expire soon.  I took a full-time Summer and Fall semester in
+2017, and then in the Spring of 2018 I returned to work and completed
+the Capstone part-time.
+
+So, now that I've completed the program: there are many amazing courses
+at HES, but the 5 elective slots in the ALM program are not enough,
+especially when they've filled up the requirements with fluff like web
+design, "cloud", and data communications where the classes only very
+loosely fit into those buckets.  I do feel like I would've been better
+served if I had more freedom to pick things that were interesting to me.
+
+However, overall my experience at HES was a good one.  There are a number
+of classes that I think were high quality and well worth my time.  I wrote a
+compiler, an operating system more or less from scratch, and designed my own
+instruction set and processor.  I've built op amps on breadboards from
+transistors, and a combinational lock out of push buttons, LED's, and flip
+flops.  I've written a multithreaded web server, my own shell, and my own
+implementations of a ton of Unix utilities.  All of this gave me a better
+foundation in how computers actually work, something I don't think I had a good
+grasp on before I began this journey - even though I had been working as a
+developer and sysadmin for a number of years.
+
+Below, I've included a write-up of each of the courses I've taken at
+HES, hopefully future students find it helpful.  One piece of advice: if
+you are coming with any exerience already as a software developer
+working on a team, pursue a thesis instead.
 
 ## Courses
 
@@ -55,7 +90,7 @@ part of the ALM.
 ### CSCI E-93: Computer Architecture
 
 This and the following two classes (CSCI E-95, and E-92) were my best
-experience at Harvard so far. I used this class as my "theoretical foundations"
+experience at Harvard. I used this class as my "theoretical foundations"
 requirement for the 3 admissions courses.
 
 In this class, I built a computer processor from scratch.  I designed an
@@ -206,9 +241,7 @@ It was run concurrently with the Harvard College version of the class.
 
 I dropped it early on, as the advertised pre-reqs were not correct. One needs
 a deeper background than I had in math, including linear algebra.  I've always
-regretted not having a better background in math.  Maybe something I'll improve
-after I graduate.
-
+regretted not having a better background in math.
 
 ### CSCI E-48: Secure Mobile Computing
 
@@ -229,30 +262,31 @@ by the time I dropped it.
 
 ### CSCI E-599: Capstone
 
-Currently in progress for Spring 2018, will update when complete.
+The capstone is a semester-long group software project, where students
+are divided into teams and complete a medium-to-large software project.
+Before the semester began, the Professor looked for project ideas. There
+was a team working on a blockchain reccomendation letters service, and
+another who was working on data mining the pubmed database to find
+studies with particular demographic data.
 
-## Conclusion
+Our team of 6 worked on a system for tracking hand hygeine in medical
+facilities.  Huge numbers of completely preventable infections are
+acquired in hospitals ever year, many resulting in death.  Proper hand
+hygiene is the single most effective tool to reduce this, and there's a
+lot of expensive, proprietary systems out there for ensuring compliance.
+Most facilities tend to use manual, paper-based methods, so our goal was
+to provide an open source, free tool to elimate the paper-based method.
+We had a stretch goal to come up with a cheaper commodity hardware
+method for tracking compliance with proximity sensors.
 
-I have finished all but the Capstone, which I'm currently taking in Spring 2018.
+We spent a lot of time working on planning and requirements gathering,
+and the project evolved and morphed a few times around the edges.  We
+didn't end up demoing hardware, although the platform had interfaces for
+integrating it, and we ended up expanding to a more general observation
+platform with the presented use case being for hand hygiene.
 
-There are many amazing courses at HES, but the 5 elective slots in the ALM
-program are not enough, especially when they've filled up the requirements with
-fluff like web design, "cloud", and data communications where the classes only
-very loosely fit into those buckets.
-
-I am a little bit disappointed by how many courses I felt like were wasting my
-time.  My own professional goals do not align with how HES has structured the
-ALM.  I'd rather have more elective slots, which I could've used to correct my
-weakness in math ([MATH E-23A](https://www.extension.harvard.edu/academics/courses/linear-algebra-real-analysis-i/15176)
-and others), or get more experience with research ([CSCI E-191](https://www.extension.harvard.edu/academics/courses/classics-computer-science/24999)).
-
-However, overall my experience at HES has been a good one.  There are a number
-of classes that I think were high quality and well worth my time.  I wrote a
-compiler, an operating system more or less from scratch, and designed my own
-instruction set and processor.  I've built op amps on breadboards from
-transistors, and a combinational lock out of push buttons, LED's, and flip
-flops.  I've written a multithreaded web server, my own shell, and my own
-implementations of a ton of Unix utilities.  All of this gave me a better
-foundation in how computers actually work, something I don't think I had a good
-grasp on before I began this journey - even though I had been working as a
-developer and sysadmin for a number of years.
+Overall it was a good and interesting experience. We even had a
+real-world deployment of our project to a free clinic in Texas, where it
+was trialed and we gathered data about the usability of our platform. We
+also participated in BioIT World and presented our project in the poster
+area.
