@@ -2,14 +2,15 @@
 layout: post
 title:  Smart Home Walkthrough
 date:   2018-07-31 19:53:00
-categories: technical
+tags: technical
+author: "Stephen Benjamin"
 ---
 
-My "smart house" started out as a couple of Hue light bulbs in my
-apartment. Now that we've bought a house, I started acquiring a few more
-smart things here and there, and over the last couple of months I
-finally decided to integrate them all together using an open source
-project called Home Assistant.
+My "smart house" started out a few years ago as a couple of Hue light
+bulbs in my apartment. Now that we've bought a house, I started
+acquiring a few more smart things here and there, and over the last
+couple of months I finally decided to integrate them all together using
+an open source project called Home Assistant.
 
 To be honest, I didn't start out with a plan, and I wish I had. However,
 with few exceptions all the things I've bought play nicely together.
@@ -20,6 +21,9 @@ When no one is at home, the house puts itself in away mode: lights and
 televisions get turned off, my thermostat temperatures set to Eco mode,
 and all of the doors get locked.  Presence detection is done through the
 Unifi module, which looks for devices on our main and Guest WLAN's.
+Solar production is tracked, and in case of a grid failure, power-hungry
+devices like the space heater in our sunroom, or the A/C are turned off
+or adjusted.
 
 Home Assistant is also fully integrated with Amazon Alexa through the HA
 Cloud project. I'm able to control all my devices through HA instead of
@@ -40,8 +44,8 @@ over from DD-WRT to Unifi last year, and now that I'm in the house I've
 bought a few more Unifi things.  My network consists of:
 
 - UniFi security gateway
-- 8 port 60W POE Switch
-- 8 port switch
+- 2x 8 port 60W POE Switch
+- 1x 8 port switch
 - 2x UniFi AP-AC-Pro
 
 The main challenge was getting the CAT6 to the various rooms, and
@@ -63,17 +67,20 @@ each:
 
 # Lighting
 
-My first "smart house" devices were Hue light bulbs, but now that I
-actually owned the property I could use a little bit more full featured
-smart switches instead. All my reading lead me to narrow down my options
-to Z-Wave switches from GE, Lutron Caseta and Insteon. Insteon has a
-large ecosystem of smart things, and came highly reccomended from a
-friend of mine. But Caseta devices were easily available locally, and
-they're *pretty*, especially with the Claro wall plates.
+My first "smart house" devices were Hue light bulbs, which work very
+well and have a wonderfully open API and developer-friendly attitude.
+I still have quite a few Hue devices, and plan to add a few more like
+the Hue Go.  For wall switches however, now that I actually owned the
+property I could use a little bit more full featured smart switches
+instead. All my reading lead me to narrow down my options to Z-Wave
+switches from GE, Lutron Caseta and Insteon. Insteon has a large
+ecosystem of smart things, and came highly reccomended from a friend of
+mine. But Caseta devices were easily available locally, and they're
+*pretty*, especially with the Claro wall plates.
 
 ![Lutron Caseta](/static/images/2018/caseta.jpg)
 
-I've heard bad things about Z-wave range and reliability, although I do
+I had heard bad things about Z-wave range and reliability, although I do
 actually own a few non-lighting Z-wave devices now. The downside to the
 others is that both Lutron Caseta and Insteon are proprietary protocols,
 with proprietary hubs. Lutron needs the Pro hub if you want an open
@@ -128,16 +135,14 @@ SolarEdge 7.6kW inverter.  In the first month of operation, I produced
 over 1100kWh - more than double our usage.  The net metering credits
 from that production should help in the winter when there's less sun.
 
-In addition to the solar, I'm on the waitlist for a Powerwall 2.  It
-should be here in a month or two, but Tesla is known for being pretty
-unreliable there.  I'm hoping it arrives before winter, and the plan is
-to operate it in backup-only mode, taking over in the event of an
-occasional power outage. With Home Assistant, I'll automate some power
-conservation strategies like adjusting the thermostat, and turning off
-power-hungry devices.
+In addition to the solar, I have a Powerwall 2.  The Powerwall operates
+in backup mode, and will take over in case of a grid failure, powering
+the house by battery and available solar.  Home Assistant sends out
+notifications, and enacts power conservation measures like adjusting the
+thermostat, and turning off power-hungry devices.
 
-For now, I've integrated information about my solar from the SolarEdge
-API using Home Assistant's REST sensors, which displays nicely on
+I've also integrated information about my solar from the SolarEdge API
+using Home Assistant's REST sensors, which displays nicely on
 HADashboard:
 
 <div align="center">
