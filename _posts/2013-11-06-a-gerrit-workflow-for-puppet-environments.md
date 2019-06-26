@@ -11,11 +11,11 @@ This is the perfect use for <a href="https://code.google.com/p/gerrit/">Gerrit</
 
 In the Puppet workflow with Gerrit, committers push their proposed changes to the pending change area for <em>master</em>, and then they go through review.  Once approved, they are committed to <em>master</em>.  When ready to move on to another environment, they can be promoted -- by way of gerrit -- by merging to development, then quality, then production for example. Life cycle management for your puppet modules.
 
-<a href="/static/images/2013/11/git_flow.jpg"><img src="/static/images/2013/11/git_flow.jpg" alt="git_flow" width="640" height="115" class="alignleft size-full wp-image-1018" /></a>
+<a href="/images/2013/11/git_flow.jpg"><img src="/images/2013/11/git_flow.jpg" alt="git_flow" width="640" height="115" class="alignleft size-full wp-image-1018" /></a>
 
 The diagram below shows how it works: a developer gets an authoritative copy of the repo, and makes some changes, but instead of committing back to the authoritative branch, it is committed to a special staging area.  The staged commit shows up in the Gerrit code review GUI.  Members of the team review the code, and provide any relevant feedback. Once the code gets a +2 vote, it's merged into the authoritative repo.  
 
-<a href="/static/images/2013/11/gerrit.png"><img src="/static/images/2013/11/gerrit.png" alt="Figure 1" width="620" height="400" class="size-full wp-image-978" /></a>
+<a href="/images/2013/11/gerrit.png"><img src="/images/2013/11/gerrit.png" alt="Figure 1" width="620" height="400" class="size-full wp-image-978" /></a>
 
 When a change is merged, the change-merged hook is executed.  I've written <a href="https://github.com/stbenjam/puppet-gerrit-workflow">one that will automatically publish the puppet environment</a>.  Unfortunately we need this separate hook, because gerrit does not look at anything in the .git/hooks directory.
 

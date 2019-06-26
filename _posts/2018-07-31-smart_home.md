@@ -30,11 +30,11 @@ Cloud project. I'm able to control all my devices through HA instead of
 using each platform's integration.  Custom skills even do things like
 report on my solar system, or answer questions about if someone is home.
 
-![Home Assistant](/static/images/2018/ha.gif)
+![Home Assistant](/images/2018/ha.gif)
 
 I also use HADashboard and an old iPad mounted to the kitchen wall:
 
-![HADashboard](/static/images/2018/hadashboard.png)
+![HADashboard](/images/2018/hadashboard.png)
 
 # Home Network
 
@@ -78,7 +78,7 @@ ecosystem of smart things, and came highly reccomended from a friend of
 mine. But Caseta devices were easily available locally, and they're
 *pretty*, especially with the Claro wall plates.
 
-![Lutron Caseta](/static/images/2018/caseta.jpg)
+![Lutron Caseta](/images/2018/caseta.jpg)
 
 I had heard bad things about Z-wave range and reliability, although I do
 actually own a few non-lighting Z-wave devices now. The downside to the
@@ -146,5 +146,5 @@ using Home Assistant's REST sensors, which displays nicely on
 HADashboard:
 
 <div align="center">
-<img src="/static/images/2018/solar.png" alt="Solar Dashboard" />
+<img src="/images/2018/solar.png" alt="Solar Dashboard" />
 </div>

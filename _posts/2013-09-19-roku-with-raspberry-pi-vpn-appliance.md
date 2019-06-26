@@ -8,7 +8,7 @@ categories: technical expat media pirating
 See my previous post on this topic, <a href="/blog/2013/06/legal-television-and-movies-for-expats/">Legal Television and Movies for Expats
 
 <div align="center">
-  <a href="/static/images/2013/09/raspberrry_pi.png"><img class="size-full wp-image-862" alt="Diagram of Network Setup" src="/static/images/2013/09/raspberrry_pi.png" width="498" height="248" /></a>
+  <a href="/images/2013/09/raspberrry_pi.png"><img class="size-full wp-image-862" alt="Diagram of Network Setup" src="/images/2013/09/raspberrry_pi.png" width="498" height="248" /></a>
 </div>
 
 <h2>Roku</h2>

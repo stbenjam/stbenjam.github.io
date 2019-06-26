@@ -9,7 +9,7 @@ The Puppet<a href="http://docs.puppetlabs.com/guides/external_nodes.html"> Exter
 
 One of the key ideas I try to communicate to my consulting customers is the importance of having "<strong>one source of truth</strong>."  It's harder than you think with many organizations relying on a number of different databases for information about their systems -- or having none of this data tracked at all.  It's rare I find a customer who has just one well-organized source.  That being said,  I believe the ENC is a good starting point for this one source of truth, because the serialized data that puppet uses can contain other arbitrary information, and used in other automation projects -- such as your provisioning layer.
 
-<a href="/static/images/2013/05/ENC.png"><img class="aligncenter size-full wp-image-511" alt="ENC" src="/static/images/2013/05/ENC.png" width="653" height="441" /></a>
+<a href="/images/2013/05/ENC.png"><img class="aligncenter size-full wp-image-511" alt="ENC" src="/images/2013/05/ENC.png" width="653" height="441" /></a>
 
 Ultimately, the backend doesn't matter too much.  I've used various different approaches depending on the maturity level of the customer.  Sometimes I need to pull the data from  more than one source (for example, IP info from an IPAM, and the rest from another source), but once the integration is done, you're left with at least a single entry point for any of your automation. Projects like <a href="http://theforeman.org/">the Foreman</a> are rapidly maturing to really replace the need to manually glue these things all together, but rolling your own is a good solution to start from.
 

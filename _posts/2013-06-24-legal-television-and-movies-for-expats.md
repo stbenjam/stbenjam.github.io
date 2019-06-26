@@ -5,13 +5,13 @@ date:   2013-06-24 15:47:00
 categories: expat pirating media
 ---
 
-<img alt="" src="/static/images/2013/01/pirate1.png" />
+<img alt="" src="/images/2013/01/pirate1.png" />
 
 There's not a lot of original television available in German. IMHO, only <a href="http://www.daserste.de/unterhaltung/krimi/tatort/index.html">Tatort</a> is worth watching. American shows like The Big Bang Theory are broadcast on TV, but I can't bring myself to <a href="http://www.youtube.com/watch?v=GZep2_MMIo0">watch Sheldon dubbed in German</a> a year after it airs in the United States.  Neither can most expats, and more than a few of the non-techies have asked me how to get all their favorite content, so here's a blog post I can link to.
 
 The simplest solution is to get a VPN and you can watch via various legal streaming services.   There's illegal options like Torrents, but <strong>torrents are problematic in Germany</strong>, so avoid them. Usenet worked for a while, but that is also troublesome because the biggest indexing site shut down, and for the ones that remain, many TV shows are being removed within minutes of being posted online.
 
-<img class="alignright size-full" alt="" src="/static/images/2013/01/fry.jpg" />
+<img class="alignright size-full" alt="" src="/images/2013/01/fry.jpg" />
 
 <strong>I have money to spend on entertainment, but these companies will not take it.</strong> What am I supposed to do?
 
@@ -19,7 +19,7 @@ The last few years felt a lot like the early days of music sharing. Bandwidth is
 
 The entertainment industry is finally starting to apply these models to movie and TV content, which makes watching American content abroad a bit easier.
 
-<a href="/static/images/2013/01/padlock.png"><img class="alignleft size-full wp-image-179" title="padlock" alt="" src="/static/images/2013/01/padlock.png" width="175" height="175" /></a>
+<a href="/images/2013/01/padlock.png"><img class="alignleft size-full wp-image-179" title="padlock" alt="" src="/images/2013/01/padlock.png" width="175" height="175" /></a>
 
 The first thing any Expat needs who wants to go legal is a VPN. For the non-technical, this is a service you pay for that makes your computer appear as if you're in the United States, bypassing any geographical restrictions. Yes, the key thing to learn is: <strong>you will need to jump through hoops to get legal (or more legal, anyway)</strong>. I use <a href="http://strongvpn.com/">StrongVPN</a>, and I'm quite happy with the quality of service. Other people use HideMyAss, or any number of other services.  After signing up, whatever service should give you instructions to setup your VPN.  It's easier than you think.
 

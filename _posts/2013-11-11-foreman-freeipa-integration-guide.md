@@ -190,7 +190,7 @@ ca = false
 
 The idea here is that our machines when foreman creates them are automatically registered to FreeIPA <em>with a one-time password</em>, and if later deleted in the Foreman, they are removed from FreeIPA too. Hosts also get an SSL certificate signed by the FreeIPA server to talk to puppet.  The flow looks like this:
 
-<a href="/static/images/2013/11/freeipa_foreman.png"><img src="/static/images/2013/11/freeipa_foreman.png" alt="Here&#039;s a really confusing graphic that may or may not make things clearer" width="590" height="310" class="size-full wp-image-1107" /></a>
+<a href="/images/2013/11/freeipa_foreman.png"><img src="/images/2013/11/freeipa_foreman.png" alt="Here&#039;s a really confusing graphic that may or may not make things clearer" width="590" height="310" class="size-full wp-image-1107" /></a>
 
 <h3>Creating IPA User with Right Permissions</h3>
 

@@ -5,7 +5,7 @@ date:   2015-01-06 17:08:00
 categories: expat technical
 ---
 
-<img class="alignleft size-full" alt="" src="/static/images/2013/01/pirate1.png" />
+<img class="alignleft size-full" alt="" src="/images/2013/01/pirate1.png" />
 
 A while ago,I wrote a blog post about <a href="/blog/2013/06/legal-television-and-movies-for-expats/">legal television and movies for expats</a>, using streaming services combined with a VPN.
 

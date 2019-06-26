@@ -6,7 +6,7 @@ categories: buddhism
 ---
 
 <div align="center">
-  <a href="/static/images/2013/08/dhamma.png"><img class=" wp-image-640 alignleft" alt="dhamma" src="/static/images/2013/08/dhamma-300x300.png" width="210" height="210" /></a>
+  <a href="/images/2013/08/dhamma.png"><img class=" wp-image-640 alignleft" alt="dhamma" src="/images/2013/08/dhamma-300x300.png" width="210" height="210" /></a>
 </div>
 
 <br>
@@ -29,7 +29,7 @@ Modern day Buddhist sects as practiced in Asian countries certainly bolt on a lo
 
 <strong>Arrival</strong>
 
-<a href="/static/images/2013/08/P1000911.jpg"><img class="size-medium wp-image-607 alignright" alt="P1000911" src="/static/images/2013/08/P1000911-300x225.jpg" width="300" height="225" /></a>
+<a href="/images/2013/08/P1000911.jpg"><img class="size-medium wp-image-607 alignright" alt="P1000911" src="/images/2013/08/P1000911-300x225.jpg" width="300" height="225" /></a>
 
 Arrival day is day "0," which starts sometime in the afternoon.  You're assigned to a room, eat dinner, and attend the introduction to the course.  The rooms are basic, but adequate.  Some centers have shared accommodations like a barracks, although most have small private rooms.  I was given a room in a 2-room cabin.  It was basic, clean and relatively comfortable.
 
