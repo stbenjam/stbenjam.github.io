@@ -1,16 +1,24 @@
 <div class="sidebar well">
-{{ site.description }}
-</div>
-
-<div class="sidebar well">
-    <h1>Recent Posts</h1>
+  <h1>Links</h1>
+  <div style="font-family: monospace; font-weight: bold;">
     <ul>
-        {% for post in site.posts limit:5 %}
-          <li><a href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>
-        {% endfor %}
+      <li>  <a
+        href="https://instagram.com/stbenjam/">instagram</a></li>
+      <li>  <a
+        href="https://github.com/stbenjam/">github</a></li>
+      <li>  <a
+        href="https://twitter.com/stbenjam/">twitter</a></li>
+      <li>  <a
+        href="https://andeanvegan.com">andean vegan</a></li>
     </ul>
+  </div>
 </div>
 
 <div class="sidebar well">
-{% include links-list.html %}
+  <h1>Recent Posts</h1>
+  <ul>
+    {% for post in site.posts limit:7 %}
+    <li><a href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
 </div>
