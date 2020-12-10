@@ -4,6 +4,7 @@ title:  Slack is Toxic
 date:   2020-09-25 19:59:00
 tags:   technical
 author: "Stephen Benjamin"
+comments: true
 ---
 
 Do other people have conversations with their managers about how to have
