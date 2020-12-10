@@ -35,8 +35,7 @@ that your user is always just there – waiting to get a message, or
 magicked into a new channel with a simple ping. You can never just not
 be there.
 
-Did you ever use [AOL Instant
-Messenger](https://en.wikipedia.org/wiki/AIM_(software)? Offline
+Did you ever use [AOL Instant Messenger](https://en.wikipedia.org/wiki/AIM_(software))? Offline
 messages were not possible for many years. You’d long to hear the sound
 of a favorite person signed on and was open to get messages. Not with
 Slack.
@@ -58,7 +57,10 @@ too.
 Not to mention the fear of missing out.  You’re on holiday? What
 important discussions are you missing on Slack while you’re sitting on
 the beach? Well, thankfully you can just pop in for a second to check it
-out since you have the mobile app!
+out since you have the mobile app! If you forget to check the app on
+vacation, the notification bubble will be there when you get back, as
+well as all the Slack e-mails urgently telling you all the stuff you
+missed.
 
 People have a responsibility to use tools appropriately, and manage
 their work-life balance, but at a certain point the evidence is so
