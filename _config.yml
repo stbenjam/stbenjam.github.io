@@ -37,4 +37,5 @@ highlighter: rouge
 markdown: kramdown
 gems: ['jekyll-paginate']
 
+include: ['.well-known']
 exclude: ['README.md', 'LICENSE']
