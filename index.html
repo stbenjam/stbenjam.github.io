@@ -4,7 +4,7 @@ layout: default
 <main class="post-list">
     {% for post in site.posts %}
     <div class="post-card" onclick="window.location.href='{{ post.url | relative_url }}'">
-        <div class="post-meta">DATE: {{ post.date | date: "%Y-%m-%d" }} // STATUS: {{ post.status | default: "ENCRYPTED" }}</div>
+        <div class="post-meta">{{ post.date | date: "%Y-%m-%d" }}</div>
         <h2>{{ post.title }}</h2>
         <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
         <a href="{{ post.url | relative_url }}" class="btn-cyber">Read More</a>
