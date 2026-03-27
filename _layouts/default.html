@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Orbitron:wght@400;700&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+</head>
+<body>
+    <button class="view-toggle" id="viewToggle" onclick="toggleView()">[ DECIPHER ]</button>
+    <div class="scanlines"></div>
+    <div class="container">
+        <header>
+            <div class="avatar">
+                <img src="https://github.com/{{ site.github_username }}.png" alt="{{ site.title }}">
+            </div>
+            <h1>{{ site.title }}</h1>
+            <div class="nav-bar">
+                <div class="nav-tag-left">NAV_SYS_v1.0</div>
+                <div class="nav-tag-right">AUTH: ACTIVE</div>
+                <div class="nav-links">
+                    <a href="{{ "/" | relative_url }}">Home</a>
+                    <a href="{{ "/about.html" | relative_url }}">About</a>
+                    <div class="dropdown">
+                        <button class="dropbtn">Socials ▾</button>
+                        <div class="dropdown-content">
+                            <a href="https://github.com/{{ site.github_username }}" target="_blank">GitHub</a>
+                            <a href="https://instagram.com/{{ site.instagram_username }}" target="_blank">Instagram</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">Keys ▾</button>
+                        <div class="dropdown-content">
+                            <a href="https://github.com/{{ site.github_username }}.gpg" target="_blank">GPG (PGP)</a>
+                            <a href="https://github.com/{{ site.github_username }}.keys" target="_blank">SSH Keys</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="layout-grid">
+            <aside class="sidebar">
+                <div class="sidebar-header"><a href="{{ "/" | relative_url }}">/home</a></div>
+                <nav class="sidebar-nav">
+                    <ul>
+                        <li class="dir">/posts</li>
+                        {% assign postsByYear = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
+                        {% for year in postsByYear %}
+                        <li class="dir year">├── /{{ year.name }}</li>
+                        {% for post in year.items %}
+                        <li class="file">
+                            <span>└──</span>
+                            <a href="{{ post.url | relative_url }}" {% if page.url == post.url %}class="active"{% endif %}>{{ post.title | slugify }}</a>
+                        </li>
+                        {% endfor %}
+                        {% endfor %}
+                    </ul>
+                </nav>
+                <div class="sidebar-footer">
+                    STATUS: [ONLINE]<br>
+                    SIGNAL: [STABLE]
+                </div>
+            </aside>
+
+            {{ content }}
+        </div>
+
+        <footer>
+            <p>&copy; {{ "now" | date: "%Y" }} {{ site.title }}. All rights reserved. // SYSTEM_READY</p>
+        </footer>
+    </div>
+
+    <script>
+        function toggleView() {
+            const body = document.body;
+            const btn = document.getElementById('viewToggle');
+            const isReader = body.classList.toggle('reader-mode');
+            
+            btn.textContent = isReader ? '[ ENCRYPT ]' : '[ DECIPHER ]';
+            localStorage.setItem('readerMode', isReader);
+        }
+
+        // Initialize from local storage
+        window.addEventListener('DOMContentLoaded', (event) => {
+            if (localStorage.getItem('readerMode') === 'true') {
+                document.body.classList.add('reader-mode');
+                document.getElementById('viewToggle').textContent = '[ ENCRYPT ]';
+            }
+
+            // Marquee scroll for truncated sidebar links
+            document.querySelectorAll('.sidebar-nav .file a').forEach(link => {
+                let animId = null;
+                // Wrap text in a span for transform-based scrolling
+                const span = document.createElement('span');
+                span.style.display = 'inline-block';
+                span.style.whiteSpace = 'nowrap';
+                while (link.firstChild) span.appendChild(link.firstChild);
+                link.appendChild(span);
+
+                const fullText = span.textContent;
+                const isTruncated = span.offsetWidth > link.clientWidth;
+
+                link.addEventListener('mouseenter', () => {
+                    span.textContent = fullText;
+                    const overflow = span.offsetWidth - link.clientWidth + 5;
+                    if (overflow <= 0) return;
+                    const speed = 52; // px per second
+                    const duration = overflow / speed * 1000;
+                    let start = null;
+                    function step(ts) {
+                        if (!start) {
+                            start = ts;
+                            link.classList.add('scrolling');
+                        }
+                        const progress = Math.min((ts - start) / duration, 1);
+                        span.style.transform = 'translateX(' + -(overflow * progress) + 'px)';
+                        if (progress < 1) animId = requestAnimationFrame(step);
+                    }
+                    animId = requestAnimationFrame(step);
+                });
+                // Trim to fit with ellipsis
+                if (isTruncated) {
+                    let t = fullText;
+                    while (span.offsetWidth > link.clientWidth && t.length > 0) {
+                        t = t.slice(0, -1);
+                        span.textContent = t + '…';
+                    }
+                }
+
+                link.addEventListener('mouseleave', () => {
+                    if (animId) cancelAnimationFrame(animId);
+                    animId = null;
+                    span.style.transform = '';
+                    link.classList.remove('scrolling');
+                    if (isTruncated) {
+                        let t = fullText;
+                        span.textContent = fullText;
+                        while (span.offsetWidth > link.clientWidth && t.length > 0) {
+                            t = t.slice(0, -1);
+                            span.textContent = t + '…';
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
