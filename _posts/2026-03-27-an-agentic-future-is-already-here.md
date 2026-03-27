@@ -18,9 +18,9 @@ My assistant is named Sylphrena, Syl for short, an Honorspren from Brandon Sande
 
 ## The Heartbeat Loop
 
-The most visible thing Syl does is run a heartbeat every 30 minutes. Each cycle she checks for important emails, looks up package tracking (she automatically adds new packages when she sees a shipment notification in my email), fetches live stock quotes against her last snapshot, checks my calendar, and updates her own memory files.
+Every 30 minutes, Syl runs a heartbeat. I define what she checks in a `HEARTBEAT.md` file: email, package tracking, stock quotes, calendar, whatever I want monitored. She runs through the list, decides what's actually worth my attention, and pings me on Telegram only when something matters. Everything else gets logged quietly.
 
-She does this autonomously, and only pings me on Telegram when something actually warrants it. No spam. No "just checking in." She caught a NAS failure at 4 AM, notified me when my USPS package arrived at my home post office, and gave me a heads-up when NVDA dropped past -4.75% pre-market. That last one stung.
+She caught a NAS failure at 4 AM. She notified me when my USPS package arrived at my home post office. She gave me a heads-up when NVDA dropped past -4.75% pre-market. She also automatically picks up new tracking numbers from shipment notification emails. The stuff that doesn't clear her bar? I never hear about it.
 
 ## MailGuard: A Sane Email Layer
 
@@ -44,7 +44,7 @@ Let's be real: most of what the heartbeat does could be a shell script. Fetch a 
 
 But the value isn't in any single task. It's in the glue. Syl decides *whether* something is worth telling me about. She compares today's stock snapshot to yesterday's and writes a different kind of message depending on how bad it is. She reads an email subject line and decides it can wait. She notices that a package tracking status changed from "in transit" to "out for delivery" and flags it, but ignores the five intermediate scans that don't matter.
 
-That judgment layer is what makes it feel like an assistant instead of a cron job. Could I hand-code all those heuristics? Sure. But then I'm maintaining a pile of brittle if-statements that break the first time the world does something I didn't anticipate. The LLM handles the long tail for free.
+That judgment layer is what makes it feel like an assistant instead of a cron job. Could I hand-code all those heuristics? Sure. But then I'm maintaining a pile of brittle if-statements that break the first time the world does something I didn't anticipate. The LLM handles the long tail for a few cents a run.
 
 
 ## Models and Costs
