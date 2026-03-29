@@ -84,9 +84,9 @@
             localStorage.setItem('readerMode', isReader);
         }
 
-        // Initialize from local storage
+        // Initialize from local storage (default to reader mode)
         window.addEventListener('DOMContentLoaded', (event) => {
-            if (localStorage.getItem('readerMode') === 'true') {
+            if (localStorage.getItem('readerMode') !== 'false') {
                 document.body.classList.add('reader-mode');
                 document.getElementById('viewToggle').textContent = '[ ENCRYPT ]';
             }
