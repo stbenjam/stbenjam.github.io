@@ -6,8 +6,6 @@ tags: technical
 author: "Stephen Benjamin"
 ---
 
-# Your AI Agent Needs Its Own Identity
-
 When people talk about running AI agents autonomously, the conversation usually centers on sandboxing: what can the agent access, what damage can it do, how do you contain the blast radius. These are important questions. But there's a deeper problem lurking underneath them.
 
 **Identity.** Who or what is doing this thing?
