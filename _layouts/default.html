@@ -6,21 +6,23 @@
     <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Orbitron:wght@400;700&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Roboto+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
 </head>
 <body>
-    <button class="view-toggle" id="viewToggle" onclick="toggleView()">[ DECIPHER ]</button>
+    <button class="view-toggle" id="viewToggle" onclick="toggleView()">theme: light</button>
     <div class="scanlines"></div>
     <div class="container">
         <header>
-            <div class="avatar">
-                <img src="https://github.com/{{ site.github_username }}.png" alt="{{ site.title }}">
+            <div class="site-identity">
+                <div class="avatar">
+                    <img src="https://github.com/{{ site.github_username }}.png" alt="{{ site.title }}">
+                </div>
+                <div>
+                    <h1>{{ site.title }}</h1>
+                </div>
             </div>
-            <h1>{{ site.title }}</h1>
             <div class="nav-bar">
-                <div class="nav-tag-left">NAV_SYS_v1.0</div>
-                <div class="nav-tag-right">AUTH: ACTIVE</div>
                 <div class="nav-links">
                     <a href="{{ "/" | relative_url }}">Home</a>
                     <a href="{{ "/about.html" | relative_url }}">About</a>
@@ -60,17 +62,14 @@
                         {% endfor %}
                     </ul>
                 </nav>
-                <div class="sidebar-footer">
-                    STATUS: [ONLINE]<br>
-                    SIGNAL: [STABLE]
-                </div>
+                <div class="sidebar-footer">archive index</div>
             </aside>
 
             {{ content }}
         </div>
 
         <footer>
-            <p>&copy; {{ "now" | date: "%Y" }} {{ site.title }}. All rights reserved. // SYSTEM_READY</p>
+            <p>&copy; {{ "now" | date: "%Y" }} {{ site.title }}. All rights reserved.</p>
         </footer>
     </div>
 
@@ -80,15 +79,14 @@
             const btn = document.getElementById('viewToggle');
             const isReader = body.classList.toggle('reader-mode');
             
-            btn.textContent = isReader ? '[ ENCRYPT ]' : '[ DECIPHER ]';
+            btn.textContent = isReader ? 'theme: dark' : 'theme: light';
             localStorage.setItem('readerMode', isReader);
         }
 
-        // Initialize from local storage (default to reader mode)
         window.addEventListener('DOMContentLoaded', (event) => {
-            if (localStorage.getItem('readerMode') !== 'false') {
+            if (localStorage.getItem('readerMode') === 'true') {
                 document.body.classList.add('reader-mode');
-                document.getElementById('viewToggle').textContent = '[ ENCRYPT ]';
+                document.getElementById('viewToggle').textContent = 'theme: dark';
             }
 
             // Marquee scroll for truncated sidebar links

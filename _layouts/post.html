@@ -2,10 +2,10 @@
 layout: default
 ---
 <article>
-    <div class="meta">LOG_DATE: {{ page.date | date: "%Y-%m-%d" }} // TRANSMISSION_ID: {{ page.transmission_id | default: "0xXX" }}</div>
+    <div class="meta">{{ page.date | date: "%Y-%m-%d" }} / technical note</div>
     <h1>{{ page.title }}</h1>
     
     {{ content }}
 
-    <a href="{{ "/" | relative_url }}" class="btn-cyber">Back to Terminal</a>
+    <a href="{{ "/" | relative_url }}" class="btn-cyber">Back to posts</a>
 </article>
