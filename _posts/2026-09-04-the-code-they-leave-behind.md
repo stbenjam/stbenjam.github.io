@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The Code They Leave Behind"
-date: 2026-09-04 12:00:00
+date: 2026-09-04 07:40:08 -0400
 tags: technical
 author: "Stephen Benjamin"
 ---
